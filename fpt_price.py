@@ -22,8 +22,6 @@ print(abspath)
 abspath = os.path.abspath("/content/drive/MyDrive/FPT/fpttest.csv")
 print(abspath)
 
-print(os.listdir("/content/drive/MyDrive/FPT"))
-
 dataset_train = pd.read_csv("/content/drive/MyDrive/FPT/newfpttrain.csv")
 
 dataset_train
