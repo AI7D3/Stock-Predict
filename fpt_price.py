@@ -15,6 +15,14 @@ import matplotlib.pyplot as plt
 # For example, running this (by clicking run or pressing Shift+Enter) will list the files in the input directory
 
 import os
+
+path = "/content/drive/MyDrive/FPT"
+  
+start = "/content/drive/MyDrive"
+
+relative_path = os.path.relpath(path, start)
+
+print(relative_path)
 print(os.listdir("/content/drive/MyDrive/FPT"))
 
 dataset_train = pd.read_csv("/content/drive/MyDrive/FPT/newfpttrain.csv")
