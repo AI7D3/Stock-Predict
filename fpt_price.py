@@ -14,6 +14,9 @@ import matplotlib.pyplot as plt
 # Input data files are available in the "../input/" directory.
 # For example, running this (by clicking run or pressing Shift+Enter) will list the files in the input directory
 
+import os
+print(os.listdir("/content/drive/MyDrive/FPT"))
+
 dataset_train = pd.read_csv("/content/drive/MyDrive/FPT/newfpttrain.csv")
 
 dataset_train
