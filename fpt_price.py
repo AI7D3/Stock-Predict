@@ -13,9 +13,6 @@ import matplotlib.pyplot as plt
 
 # Input data files are available in the "../input/" directory.
 
-from google.colab import drive
-drive.mount('/content/drive/')
-
 import os
 print(os.listdir("/content/drive/MyDrive/FPT"))
 
