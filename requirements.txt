@@ -1,4 +1,2 @@
 matplotlib
 sklearn
-scikit-learn
-minmaxscaler
