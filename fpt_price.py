@@ -12,15 +12,12 @@ import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
 import matplotlib.pyplot as plt
 
 # Input data files are available in the "../input/" directory.
-# For example, running this (by clicking run or pressing Shift+Enter) will list the files in the input directory
+
+from google.colab import drive
+drive.mount('/content/drive/')
 
 import os
-
-abspath = os.path.abspath("/content/drive/MyDrive/FPT/newfpttrain.csv")
-print(abspath)
-
-abspath = os.path.abspath("/content/drive/MyDrive/FPT/fpttest.csv")
-print(abspath)
+print(os.listdir("/content/drive/MyDrive/FPT"))
 
 dataset_train = pd.read_csv("/content/drive/MyDrive/FPT/newfpttrain.csv")
 
@@ -75,7 +72,7 @@ regressor.compile(optimizer = 'adam',loss = 'mean_squared_error')
 
 regressor.fit(x_train,y_train,epochs = 100, batch_size = 32)
 
-dataset_test =pd.read_csv("/content/drive/MyDrive/FPT/fpt-test.csv")
+dataset_test =pd.read_csv("/content/drive/MyDrive/FPT/fpttest.csv")
 
 real_stock_price = dataset_test.iloc[:,1:2].values
 
