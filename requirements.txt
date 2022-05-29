@@ -1,2 +1,6 @@
-matplotlib
-sklearn
+streamlit 
+datetime 
+yfinance 
+fbprophet
+fbprophet.plot
+plotly
